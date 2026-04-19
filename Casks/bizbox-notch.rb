@@ -9,6 +9,12 @@ cask "bizbox-notch" do
 
   app "Bizbox Notch.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Bizbox Notch.app"],
+                   sudo: true
+  end
+
   zap trash: [
     "~/Library/Preferences/com.hahmjuntae.bizbox-notch.plist"
   ]
