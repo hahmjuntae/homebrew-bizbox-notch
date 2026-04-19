@@ -11,8 +11,7 @@ cask "bizbox-notch" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Bizbox Notch.app"],
-                   sudo: true
+                   args: ["-cr", "#{appdir}/Bizbox Notch.app"]
   end
 
   zap trash: [
