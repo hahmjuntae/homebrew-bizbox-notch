@@ -1,6 +1,6 @@
 cask "bizbox-notch" do
-  version "0.2.31"
-  sha256 "87bcaa39d2131e058d33c76c11b4bab749adac0d6f82d2c8dcec29232d1665b1"
+  version "0.2.32"
+  sha256 "bfafe765462a27bbe03840e7185d79778db64e52bc36f5721715d8a4b14a4276"
 
   url "https://github.com/hahmjuntae/bizbox-notch/releases/download/v#{version}/Bizbox-Notch-#{version}.dmg"
   name "Bizbox Notch"
